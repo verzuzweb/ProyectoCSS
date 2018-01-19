@@ -1,9 +1,30 @@
 @charset "UTF-8";
 /* CSS Document */
+
+	
 body{
 	animation:miAnimacion 1s;
+	background-color:#02010a;
 	}
-	
+img{
+	-webkit-box-shadow: 2px 2px #02010A;
+	box-shadow: 2px 2px #02010A;
+	}
+
+p{
+	font-family: 'Dancing Script', cursive;
+	}
+
+h1{
+	font-family: 'Dancing Script', cursive;
+	color:#FFFFFF;
+	text-shadow:2px 2px 2px #02010a;
+	}
+h2{
+	font-family: 'Dancing Script', cursive;
+	color:#02010a;
+	}
+
 @-webkit-keyframes miAnimacion{	
 	0%{
 	margin-top:150%;
@@ -49,26 +70,25 @@ header{
 #contenedor1{
 	background-color: #82c3a6;
 	}
+	
 #contenedor1 .img1{
 	text-align:center;
 	}
 .adaptativa1{
 	width:90%;
-	margin:2%;
-	padding:2%;
+	margin-top:2vw;
+	margin-bottom:2vw;
 	border:1px;
 }
 .adaptativa2{
 	width:90%;
-	margin:2%;
-	padding:2%;
+	margin-top:2vw;
 	border:1px;
 }
 .adaptativa3{
-	width:90%;
-	margin:2%;
-	padding:2%;
-	border:1px;
+	width: 90%;
+	margin-top:2vw;
+	border: 1px;
 }
 	
 #contenedor2 .contenedorimg{
@@ -78,6 +98,8 @@ header{
 	border:1px;
 	text-align:center;
 	}
+	
+	
 	
 .img2{
 	flex-grow:1;
@@ -89,29 +111,101 @@ header{
 	align-content:center;
 	}
 
-
 #contenedor3 .pie{
 	display:flex;
 	flex-direction:row;
 	background-color: #C6d5c5;
 	border:1px;
-	text-align:center;
+	text-align:left;
 	border-radius: 0 0 10px 10px;
 }
-
-.foo1{
-	flex-grow:1;
-	}
 	
-.foo2{
-	flex-grow:1;
 	
+	
+#contenido{
+	width:1200px;
+	margin:auto;
 	}
 
-.foo3{
-	flex-grow:1;
+.contenedor{
+	width:100%;
+	}
+#contenedor1{
+	width:100%;
+	}
+#contenedor2{
+	width:100%;
+	}
+#contenedor3{
+	width:100%;
+	}
+
+.contenedor{
+	display: -webkit-flex;
+  	display: flex;
+  	-webkit-flex-flow: row wrap;
+  	flex-flow: row wrap;
+	}
+.contenedorimg{
+	display: -webkit-flex;
+  	display: flex;
+  	-webkit-flex-flow: row wrap;
+  	flex-flow: row wrap;
+	}
+.img2, .img3{
+	width:50%;
+	}
+.pie{
+	display: -webkit-flex;
+  	display: flex;
+  	-webkit-flex-flow: row wrap;
+  	flex-flow: row wrap;
+	padding:3vw;
+	margin:0;
+	}
+.foo1, .foo2, .foo3, .foo4{
+	width:25%;
 	}
 	
-.foo4{
-	flex-grow:1;
-	}
+@media (max-width: 900px) {
+  .img2, .img3{
+    width: 100%;
+  }
+	.contenedorimg {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pie{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+  .foo1, .foo2, .foo3, .foo4{
+	width:100%;
+  }
+  	.contenedo{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+    .bloque1, .bloque2{
+    width: 100%;
+	text-align:center;
+  }
+  #contenido{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+	
+
+
+
+
+
+
+
+
+
